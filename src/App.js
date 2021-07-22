@@ -12,8 +12,8 @@ const App = () => {
 		height: '300px',
 		width: '300px',
 		border: '2px solid black',
-		top: '30%',
-		left: '40%',
+		top: 'calc(50% - 150px)',
+		left: 'calc(50% - 150px)',
 		backgroundColor: 'green',
 	  } }
 		      >
@@ -22,8 +22,8 @@ const App = () => {
 			height: '200px',
 			width: '200px',
 		  border: '2px solid black',
-			top: '15%',
-			left: '15%',
+			top: 'calc(50% - 100px)',
+			left: 'calc(50% - 100px)',
 			backgroundColor: 'blue',
 				 } }
 		>
@@ -32,8 +32,8 @@ const App = () => {
 	      height: '100px',
 				width: '100px',
 				border: '2px solid black',
-			  top: '20%',
-				left: '20%',
+			  top: 'calc(50% - 50px)',
+				left: 'calc(50% - 50px)',
 				backgroundColor: 'crimson',
 				 } }
 			/>
