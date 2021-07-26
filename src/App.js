@@ -14,7 +14,7 @@ const App = () => {
 		border: '2px solid black',
 		top: 'calc(50% - 150px)',
 		left: 'calc(50% - 150px)',
-		backgroundColor: 'green',
+		backgroundColor: 'blue',
 	  } }
 		      >
 		<div style={ {
@@ -24,7 +24,7 @@ const App = () => {
 		  border: '2px solid black',
 			top: 'calc(50% - 100px)',
 			left: 'calc(50% - 100px)',
-			backgroundColor: 'blue',
+			backgroundColor: 'crimson',
 				 } }
 		>
 			<div style={ {
@@ -34,7 +34,7 @@ const App = () => {
 				border: '2px solid black',
 			  top: 'calc(50% - 50px)',
 				left: 'calc(50% - 50px)',
-				backgroundColor: 'crimson',
+				backgroundColor: 'green',
 				 } }
 			/>
 		</div>
