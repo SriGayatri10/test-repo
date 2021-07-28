@@ -8,9 +8,11 @@ import People from './components/people';
 // eslint-disable-next-line max-lines-per-function
 const App = () => {
 	console.log(data);
+	// eslint-disable-next-line no-unused-vars
+	const { people } = data;
 
 	return <div className="App">
-		{People(data.people)}</div>;
+		{people.map(People)}</div>;
 	// eslint-disable-next-line no-unused-vars
 };
 
