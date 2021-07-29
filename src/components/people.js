@@ -1,17 +1,14 @@
 /* eslint-disable no-console */
 /* eslint-disable react/destructuring-assignment */
 import { React } from 'react';
+import Person from './person';
+
 const People = (people) => {
-	const { name } = people;
-	const { age } = people;
-	const { color } = people;
+	const count = people.length;
 
 	return <div>
-		<div
-			style={ {
-				backgroundColor: color,
-			} }
-		>Hello! {name} . Your age is {age}</div>
+		<div>{people.map(Person)}</div>
+		<div> People Count : {count} </div>
 	</div>;
 };
 
