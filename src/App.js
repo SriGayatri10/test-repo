@@ -1,3 +1,4 @@
+
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-magic-numbers */
 
@@ -6,9 +7,9 @@ import './App.scss';
 import Button from './components/Button';
 import Operator from './components/Operators';
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 const operators = ['+', '-', '*', '/'];
-const App = () => <div>
+const App = () => <div className="layer">
 	<div> {numbers.map(Button)} </div>;
 	<div>{operators.map(Operator)}</div>;
 </div>;
