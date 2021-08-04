@@ -1,11 +1,9 @@
-/* eslint-disable no-console */
-/* eslint-disable no-undef */
-/* eslint-disable no-mixed-spaces-and-tabs */
 import { React } from 'react';
+import context from '../core/context';
 
 const Button = (eachButton) =>
-	<button type="button">{eachButton}</button>
-	// console.log(eachButton);
-;
+	<button
+		onClick={ () => context.actions.setCount(eachButton) }
+	>{eachButton}</button>;
 
 export default Button;
