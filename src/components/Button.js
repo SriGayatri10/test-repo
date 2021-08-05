@@ -1,9 +1,8 @@
+/* eslint-disable react/destructuring-assignment */
 import { React } from 'react';
-import context from '../core/context';
+import Number from './Number-in-row';
 
 const Button = (eachButton) =>
-	<button
-		onClick={ () => context.actions.setCount(eachButton) }
-	>{eachButton}</button>;
+	<div>{eachButton.map(Number)}</div>;
 
 export default Button;
