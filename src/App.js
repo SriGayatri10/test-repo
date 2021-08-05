@@ -9,13 +9,13 @@ import Button from './components/Button';
 import Operator from './components/Operators';
 import context from './core/context';
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [0]];
 const operators = ['+', '-', '*', '/'];
 
 const App = () => {
 	console.log(context.state);
 	return <div className="layer">
-		<div> {numbers.map(Button)} </div>
+		<div>{numbers.map(Button)} </div>
 		<div>{operators.map(Operator)}</div>
 		<div>{context.state.count}</div>
 		<div>{context.state.operator}</div>
