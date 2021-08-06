@@ -7,11 +7,11 @@
 import { React } from 'react';
 import './App.scss';
 import context from './core/context';
-import Input from './components/Input';
+import setInput from './components/Input';
 
 const App = () => {
 	console.log(context.state);
-	return <div className="text-box">{Input()}</div>;
+	return <div className="text-box">{setInput()}</div>;
 };
 
 export default App;
