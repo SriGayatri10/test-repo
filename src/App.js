@@ -8,10 +8,14 @@ import { React } from 'react';
 import './App.scss';
 import context from './core/context';
 import setInput from './components/Input';
+import randomString from './components//randomString';
 
 const App = () => {
 	console.log(context.state);
-	return <div className="text-box">{setInput()}</div>;
+	return <div className="text-box">
+		<div>{randomString()}</div>
+		<div>{setInput()}</div>
+	</div>;
 };
 
 export default App;
