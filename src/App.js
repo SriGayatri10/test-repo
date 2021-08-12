@@ -1,20 +1,16 @@
-/* eslint-disable react/void-dom-elements-no-children */
 /* eslint-disable no-console */
-
-/* eslint-disable no-mixed-spaces-and-tabs */
-/* eslint-disable no-magic-numbers */
 
 import { React } from 'react';
 import './App.scss';
 import context from './core/context';
-import setInput from './components/Input';
-import randomString from './components//randomString';
+import Input from './components/Input';
 
 const App = () => {
 	console.log(context.state);
 	return <div className="text-box">
-		<div>{randomString()}</div>
-		<div>{setInput()}</div>
+		<div>score:{context.state.score}</div>
+		<div>{context.state.question}</div>
+		<div>{Input()}</div>
 	</div>;
 };
 
