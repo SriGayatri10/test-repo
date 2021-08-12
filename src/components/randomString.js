@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-magic-numbers */
-const randomBetween = (min, max) =>
+/* const randomBetween = (min, max) =>
 	Math.floor(Math.random() * (max - min + 1)) + min;
 const randomCharacter = () => {
 	const charac = randomBetween(65, 90);
@@ -15,4 +15,4 @@ const randomString = () => {
 	return string;
 };
 
-export default randomString;
+export default randomString;*/
