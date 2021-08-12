@@ -1,10 +1,12 @@
 import { React } from 'react';
 import context from '../core/context';
 
-const setInput = () =>
+const Input = () =>
 	<input
-		type="text"
-		onChange={ (evt) => context.actions.inputs(evt.target.value) }
+		value={ context.state.answer }
+		onChange={ (evt) => {
+			context.actions.setInput(evt.target.value);
+		} }
 	/>;
 
-export default setInput;
+export default Input;
